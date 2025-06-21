@@ -86,13 +86,13 @@ int main() {
     Library library;
     int choice;
     while (true) {
-        cout << "\n\n===== Library Management System =====\n";
+        cout << "\n\n------ Library Management System --==\n";
         cout << "1. Add Book\n";
         cout << "2. Display Books\n";
         cout << "3. Issue Book\n";
         cout << "4. Return Book\n";
         cout << "5. Exit\n";
-        cout << "Enter your choice: ";
+        cout << "Hit your choice: ";
         cin >> choice;
 
         switch (choice) {
@@ -101,7 +101,7 @@ int main() {
             case 3: library.issueBook(); break;
             case 4: library.returnBook(); break;
             case 5: cout << "Exiting...\n"; return 0;
-            default: cout << "Invalid choice! Try again.\n";
+            default: cout << "Wrong : invalid choice! Try again.\n";
         }
     }
 }
